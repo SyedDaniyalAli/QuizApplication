@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank of questions"
+            android:textSize="30dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/txtquest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="type Questions here"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add questions" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <Spinner
+            android:id="@+id/spcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ListView
+            android:id="@+id/lstQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>
